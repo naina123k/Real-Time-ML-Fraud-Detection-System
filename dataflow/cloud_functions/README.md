@@ -11,3 +11,12 @@ Vertex AI for low-latency transaction classification and automated alerts.
 
 ### Architecture
 Pub/Sub → Dataflow → Vertex AI → BigQuery → Cloud Functions
+
+
+flowchart LR
+    A[Transaction Events] --> B[Pub/Sub]
+    B --> C[Dataflow Streaming]
+    C --> D[Vertex AI Endpoint]
+    D --> E[Fraud Predictions]
+    E --> F[BigQuery]
+    E --> G[Cloud Functions Alerts]
