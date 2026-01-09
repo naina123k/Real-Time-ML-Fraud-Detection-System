@@ -1,0 +1,5 @@
+tensorflow
+apache-beam[gcp]
+google-cloud-aiplatform
+google-cloud-pubsub
+google-cloud-bigquery
